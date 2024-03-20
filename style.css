@@ -4,19 +4,35 @@
     box-sizing: border-box;
 }
 
-.container {
+html {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 320px;
 }
 
 .square {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: #8dae87;
-    color: white
+    color: white;
+    transition: all 1s;
+}
+
+.transformation {
+    /*scale 10% rotation 360deg horaire*/
+    transform: scale(0.9) rotate(360deg);
+    background-color: firebrick;
 }
